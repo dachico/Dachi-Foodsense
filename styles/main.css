@@ -1,0 +1,954 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+/* 
+* Add your own CSS code below... 
+*/
+.wrapper {
+    /* border: 1px goldenrod solid; */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 110rem;
+}
+#email {
+    font-size: 1.3rem;
+}
+.logo-nav-box {
+    /* border: 1px plum solid; */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+}
+a {
+    text-decoration: none;
+}
+.logo-img {
+    border-radius: 50%;
+    float: left;
+    left: 0;
+    margin-left: 0;
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 180px;
+    float: left;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    left: 0;
+    margin-bottom: 4rem;
+}
+.main-nav-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.4rem;
+}
+.main-nav-item > a {
+    color: #34ac98;
+    font-style: italic;
+    font-weight: 500;
+}
+.main-nav-item-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 1rem;
+}
+.main-nav-item i {
+    font-size: 2.5rem;
+    color: black;
+    margin-right: 0.6rem;
+}
+i.fa-envelope-o {
+    color: #999;
+}
+
+.main-nav-bottom-line, .bottom-line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+    width: 100%;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 160px;
+}
+.social a {
+    color: #34ac98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px #999 solid;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    padding-left: 0;
+    padding-right: 0.3rem;
+    width: 150px;
+}
+.social i {
+    color: #34ac98;
+    margin: 0.6rem;
+    justify-content: flex-start;
+}
+.latest {
+    width: 150px;
+    float: left;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+.latest h4 {
+    border-bottom: dotted 1.5px lightgray;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lets {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    width: 150px;
+}
+.lets h4 {
+    border-bottom: dotted 1.5px lightgray;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lets p {
+    color: gray;
+    line-height: 1.8em;
+    margin-top: 1rem;
+    font-family: italic;
+}
+.main-content {
+    /* border: 1px deeppink solid; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+.gallery-box {
+    width: 100%;
+}
+.gallery-box-img {
+    width: 100%;
+    height: auto;
+}
+.hero {
+    position: relative;
+}
+.img-h2 {
+    position: absolute;
+    background: white;
+    width: 25rem;
+    height: 5rem;
+    bottom: 30rem;
+    text-align: center;
+    line-height: 2.2em;
+    font-size: 2.4rem;
+    font-style: italic;
+}
+.img-txt {
+    position: absolute;
+    background: black;
+    color: white;
+    height: 4rem;
+    width: 42rem;
+    line-height: 2.4em;
+    font-size: 1.6rem;
+    bottom: 26rem;
+    text-align: center;
+    font-style: italic;
+}
+.img-sec-txt {
+    position: absolute;
+    background-color: rgba(153, 143, 143, 0.514);
+    border-radius: 5px;
+    height: 2rem;
+    width: 10rem;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2em;
+    right: 0.5rem;
+    bottom: 21rem;
+    color: rgba(0, 0, 0, 0.527);
+}
+.second-nav-item {
+    padding: 2rem;
+    flex: 1;
+    background-color: #d9efec;
+    border-right: 1px solid #bbded9;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.second-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.second-nav ul {
+    display: flex;
+}
+.second-nav-item a {
+    color: #34ac98;
+}
+.second-nav-item h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.second-nav-item p {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 100;
+}
+.second-nav-item:first-child {
+    border-left: 0;
+}
+.second-nav-item-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.subscribe {
+    width: 100%;
+    min-height: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    line-height: 1em;
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+}
+.subscribe>div{
+    display: flex;
+}
+.subscribe i {
+    font-size: 3rem;
+    margin-right: 0.3rem;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background: linear-gradient(-270deg, rgb(251, 251, 251) 0%, rgb(233, 233, 233) 50%);
+    border: 0.2px solid rgba(0, 0, 0, 0.267);
+    border-radius: 7px;
+    color: black;
+    font-weight: bold;
+}
+.subscribe p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    padding: 1rem;
+    color: black;
+    font-family: italic;
+}
+.subscribe form {
+    width: 100%;
+    display: flex;
+}
+.subscribe form input {
+    width: 60%;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 0.6rem;
+}
+.subscribe form button {
+    padding: 0.5rem 1rem;
+}
+.featured-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.featured-content-item {
+    flex-basis: 25%;
+    padding: 0.6rem;
+}
+.fc-item-img-box {
+    width: 100%;
+}
+h2.fc-item-title {
+    color: #34ac98;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.fc-item-img {
+    width: 20rem;
+    height: 14rem;
+    size: 90%;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.fc-item-body {
+    line-height: 1.8rem;
+}
+.second-fc {
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 1rem;
+}
+.second-fc span {
+    color: #34ac98;
+    border-bottom: 1px dotted lightgray;
+}
+/* time {
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 10px;
+}
+time > span {
+    font-size: 1rem;
+} */
+.footer {
+    /* border: 1px palevioletred; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1.6rem;
+    flex-basis: 100%;
+    border-top: 1px solid lightgray;
+    margin-top: 4rem;
+}
+.footer-social-links {
+    text-align: right;
+    color: #999;
+    font-size: 2rem;
+}
+.footer-social-links>*{
+    padding-left: 0.6rem;
+    color: #999;
+}
+.footer-legal-links p{
+    color: #999;
+}
+.footer-legal-links > p > a {
+    color: #34ac98;
+}
+.footer-legal-links > p > *{
+    color: #34ac98;
+}
+div.hero nav.hero-item.second-nav {
+    margin-top: -3px;
+}
+li.second-nav-item:hover {
+    background-color: #79bdb16b;
+}
+#form {
+    width: 60rem;
+}
+.subscribe p {
+    font-size: 1.3rem;
+}
+
+
+
+
+@media screen and (min-width: 1175px) and (max-width: 1300px){
+    .second-nav-item-link p {
+        display: none;
+    }
+    .second-nav-item {
+        padding: 1rem;
+        flex: 1;
+        background-color: #d9efec;
+        border-right: 1px solid #bbded9;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-nav ul {
+        display: flex;
+        flex: 1;
+    }
+    .second-nav {
+        display: flex;
+        flex: 1;
+    }
+    ul.main-nav {
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+    }
+    #form {
+        width: 40rem;
+    }
+    .subscribe p {
+        font-size: 1.3rem;
+    }
+    .social {
+        width: 160px;
+        margin-left: 0rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .social a {
+        width: 160px;
+    }
+    .latest {
+        width: 150px;
+    }
+    .lets {
+        width: 150px;
+    }
+    div.hero nav.hero-item.second-nav {
+        margin-top: -3px;
+    }
+    .img-h2 {
+        visibility: hidden;
+    }
+    .img-h2::after {
+        visibility: visible;
+        position: absolute;
+        background: white;
+        content: "What's cooking?";
+        width: 28rem;
+        text-align: center;
+        right: -63rem;
+        height: 5rem;
+        bottom: -2.2rem;
+    }
+    .img-txt {
+        visibility: hidden;
+    }
+    .img-txt::after {
+        visibility: visible;
+        position: absolute;
+        background-color: black;
+        content: "Browse our gallery for dependably delicious recipes.";
+        width: 40rem;
+        right: -46.03rem;
+        bottom: -2rem;
+        text-align: center;
+    }
+    .img-sec-txt {
+        bottom: 17rem;
+    }
+    /* .img-h2 {
+        right: 0;
+        top: 28rem;
+    }
+    .img-txt {
+        right: 0;
+        top: 33rem;
+    }
+    .img-sec-txt {
+        bottom: 17rem;
+        right: 1rem;
+    } */
+}
+@media screen and (min-width: 990px) and (max-width: 1174px) {
+    .wrapper {
+        max-width: 75rem;
+    }
+    .logo-nav-box {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 0;
+        font-style: italic;
+        
+    }
+    .social-invite {
+        display: flex;
+    }
+    .main-content {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+    .main-nav-item .main-nav-item-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    .logo-nav-box {
+        max-width: 70rem;
+    }
+    div.hero nav.hero-item.second-nav {
+        margin-top: -3px;
+    }
+    div.subscribe > div > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    /* .main-nav-item-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    .main-nav-item-link i {
+        margin: 1rem;
+    }
+    .second-nav-item {
+        /* padding: 1rem;
+        justify-content: center;
+        align-items: center; */
+        padding: 1rem;
+        flex: 1;
+        background-color: #d9efec;
+        border-right: 1px solid #bbded9;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .second-nav ul {
+        display: flex;
+        flex: 1;
+    }
+    .second-nav-item-link p {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .featured-content-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 25%;
+    }
+    .fc-item-img {
+        width: 17rem;
+    }
+    h2.fc-item-title {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .logo-nav-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul.main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15rem;
+        gap: 4rem;
+        white-space: nowrap;
+    }
+    .main-nav-item-link {
+        display: inline-block;
+    }
+    .fa-solid {
+        display: hidden;
+    }
+    .img-h2 {
+        visibility: hidden;
+    }
+    .img-h2::after {
+        visibility: visible;
+        position: absolute;
+        background: white;
+        content: "Share your Food Sense";
+        width: 28rem;
+        text-align: center;
+        left: 0;
+        height: 4.5rem;
+        bottom: -2.2rem;
+    }
+    .img-txt {
+        visibility: hidden;
+    }
+    .img-txt::after {
+        visibility: visible;
+        position: absolute;
+        background-color: black;
+        content: "Submit your favorite recipes, become a contributor, or get interviewed.";
+        width: 50rem;
+        left: 0;
+        bottom: -2rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .img-sec-txt {
+        bottom: 19rem;
+    }
+    div.subscribe > div > p {
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+    form#form {
+        width: 45rem;
+    }
+    div#pinter p.second-fc {
+        margin-bottom: 9rem;
+    }
+    div#pinter h2.fc-item-title {
+        margin-bottom: 0;
+    }
+    div#pinter p.fc-item-body {
+        margin-top: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 989px){
+    .wrapper {
+        max-width: 76rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-nav-item-link p {
+        display: none;
+    }
+    .second-nav ul {
+        display: flex;
+        flex: 1;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+    }
+    .logo-nav-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 2rem;
+        white-space: nowrap;
+        flex: 1;
+        max-width: 60rem;
+        gap: 1rem;
+    }
+    .main-nav i {
+        display: none;
+    }
+    .gallery-box-img {
+        height: auto;
+    }
+    .second-nav ul {
+        display: flex;
+    }
+    .featured-content-item {
+        flex-basis: 40%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .fc-item-img {
+        width: 23rem;
+    }
+    .fc-item-title {
+        font-size: 2.2rem;
+    }
+    .fc-item-body {
+        font-size: 1.2rem;
+    }
+    .main-nav-item-link {
+        display: inline;
+    }
+    aside.social {
+        display: none;
+    }
+    li.second-nav-item {
+        display: none;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .subscribe div p{
+        font-size: 1.3rem;
+    }
+    .subscribe form {
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .img-h2 {
+        visibility: hidden;
+    }
+    .img-h2::after {
+        visibility: visible;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.664);
+        content: "Share your Food Sense";
+        width: 62.5rem;
+        text-align: center;
+        left: 0;
+        height: 4.5rem;
+        top: 11rem;
+        text-align: start;
+        font-size: 1.7rem;
+        font-weight: 100;
+        padding: 1rem;
+        line-height: 1.5em;
+    }
+    .img-txt {
+        visibility: hidden;
+    }
+    .img-txt::after {
+        visibility: visible;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        content: "Submit your favorite recipes, become a contributor, or get interviewed.";
+        width: 62.5rem;
+        left: 0;
+        top: 10.5rem;
+        text-align: center;
+        font-size: 1.4rem;
+        text-align: start;
+        padding: 1rem;
+        height: 4rem;
+        line-height: 1.5em;
+    }
+    .img-sec-txt {
+        visibility: hidden;
+    }
+    .img-sec-txt::after {
+        visibility: visible;
+        position: absolute;
+        background-color: white;
+        color: black;
+        content: "*photo by clare barboza";
+        width: 10rem;
+        top: 8.5rem;
+        left: 1rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 766px) {
+    .wrapper {
+        max-width: 60rem;
+        padding: 1rem;
+
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        justify-content: center;
+    }
+    .main-nav {
+        max-width: 36rem;
+    }
+    .main-nav-item {
+        font-size: 1.4rem;
+    }
+    .main-nav-bottom-line {
+        display: none;
+    }
+    .featured-content {
+        justify-content: space-between;
+    }
+    aside.social {
+        display: none;
+    }
+    li.second-nav-item {
+        display: none;
+    }
+    .second-nav-item-link p {
+        display: none;
+    }
+    .main-nav i {
+        display: none;
+    }
+    div.featured-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin-left: calc(50% - (30rem / 2));
+    }
+    .featured-content-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 30rem;
+        flex-basis: 100%;
+    }
+    .fc-item-body {
+        font-size: 1.3rem;
+    }
+    img.fc-item-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img.fc-item-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 30rem;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .subscribe div p{
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .subscribe form {
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        width: 40rem;
+        gap: 3rem;
+        font-weight: bold;
+        margin-bottom: -0.5rem;
+    }
+    .logo {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: 45rem;
+        border-top-width: 100%;
+        border-top: 2px solid rgb(226, 222, 222);
+        padding: 1rem;
+        border-top-right-radius: 5px;
+    }
+    .hero {
+        width: 45rem;
+        position: relative;
+    }
+    .img-h2 {
+        visibility: hidden;
+    }
+    .img-h2::after {
+        visibility: visible;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.664);
+        content: "Read, Learn, Share";
+        width: 45rem;
+        text-align: center;
+        left: 0;
+        height: 4rem;
+        top: 10rem;
+        text-align: start;
+        font-size: 1.9rem;
+        padding: 1rem;
+        line-height: 1.1em;
+    }
+    .img-txt {
+        visibility: hidden;
+    }
+    
+    .img-txt::after {
+        visibility: visible;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        content: "Get daily how-tos, stories & updates with the latest news.";
+        width: 45rem;
+        left: 0;
+        right: 0;
+        top: 8.8rem;
+        text-align: center;
+        font-size: 1.5rem;
+        text-align: start;
+        padding: 1rem;
+        height: 3.7rem;
+        line-height: 1.1em;
+    }
+    .img-sec-txt {
+        visibility: hidden;
+    }
+    .img-sec-txt::after {
+        visibility: visible;
+        position: absolute;
+        color: black;
+        content: "*photo by clare barboza";
+        width: 10rem;
+        top: 5.8rem;
+        left: 1rem;
+        overflow: hidden;
+    }
+    .gallery-box-img {
+        height: 30rem;
+    }
+    #form {
+        width: 43rem;
+    }
+}
+
+

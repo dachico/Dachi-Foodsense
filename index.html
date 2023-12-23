@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dachi foodsense</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/918ad7debf.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="logo-nav-box">
+        <div class="logo">
+          <img src="logo.png" alt="#" class="logo-img
+          ">
+        </div>
+        <ul class="main-nav">
+          <li class="main-nav-item"><a href="#" class="main-nav-item-link" onclick="changeImage('secondmain.jpeg')"><i class="fa-solid fa-utensils icon"></i>Tastemakers</a></li>
+          <li class="main-nav-item"><a href="#" class="main-nav-item-link" onclick="changeImage('firstmain.jpeg')"><i class="fa-solid fa-book icon"></i>Blog</a></li>
+          <li class="main-nav-item"><a href="#" class="main-nav-item-link" onclick="changeImage('thirdmain.jpeg')"><i class="fa-regular fa-clipboard icon"></i>The A-List</a></li>
+          <li class="main-nav-item"><a href="#" class="main-nav-item-link" onclick="changeImage('fourthmain.jpeg')"><i class="fa-solid fa-camera icon"></i>Contribute</a></li>
+          <li class="main-nav-item"><a href="#" class="main-nav-item-link"><i class="fa-regular fa-address-book icon"></i>About</a></li>
+        </ul>
+        <!-- <div class="social-invite">social invite box</div> -->
+        <aside class="social">
+          <div class="latest">
+            <h4>LATEST TWEET</h4>
+            <a href="#"><i class="fa-brands fa-twitter"></i><p>Join the Conversation</p></a>
+          </div>
+          <div class="lets">
+            <h4>LET'S BE FRIENDS!</h4>
+            <p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i>Join the Community</a>
+          </div>
+        </aside>
+      </nav>
+      <main class="main-content">
+        <div class="hero">
+          <div class="hero-item gallery-box">
+            <img src="firstmain.jpeg" alt="#" class="gallery-box-img" id="image">
+          </div>
+          <h2 class="img-h2">Read, Learn, Share</h2>
+          <p class="img-txt">Get daily how-tos, stories & updates with the latest news.</p>
+          <p class="img-sec-txt">photo by clare barboza</p>
+          <nav class="hero-item second-nav">
+            <ul>
+              <li class="second-nav-item"><a href="#" class="second-nav-item-link" onclick="changeImage('secondmain.jpeg')"><h4 class="heading">Tastemakers</h4><p>Feast your eyes & get recipes!</p></a></li>
+              <li class="second-nav-item" onclick="changeImage('firstmain.jpeg')"><a href="#" class="second-nav-item-link"><h4 class="heading">Blog</h4><p>News, how-tos, stories, and more</p></a></li>
+              <li class="second-nav-item"><a href="#" class="second-nav-item-link"><h4 class="heading" onclick="changeImage('thirdmain.jpeg')">The A-List</h4><p>Handpicked, absolute favorites</p></a></li>
+              <li class="second-nav-item"><a href="#" class="second-nav-item-link"><h4 class="heading" onclick="changeImage('fourthmain.jpeg')">Contribute</h4><p>We want to hear from you!</p></a></li>
+
+            </ul>
+          </nav>
+          <div class="subscribe">
+            <div>
+              <i class="fa fa-envelope-o fa-3x"></i>
+              <p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+            </div>
+            <form id="form"><input type="email" id="email" size="25" placeholder="Email"><button>Subscribe</button></form>
+          </div>
+        </div>
+        <div class="featured-content">
+          <div class="featured-content-item">
+            <div class="content-iten fc-item-img-box"><img src="/images/asset 1.jpeg" alt="#" class="fc-item-img"></div>
+            <h2 class="content-item fc-item-title">2012's Best Summer Cookbooks</h2>
+            <p class="content-item fc-item-body">With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+            <p class="second-fc"><time datetime="2012-05-23">May 23, 2012</time>/ 
+              <span>read »</span>
+            </p>
+          </div>
+          <div class="featured-content-item">
+            <div class="content-iten fc-item-img-box"><img src="/images/asset 2.jpeg" alt="#" class="fc-item-img"></div>
+            <h2 class="content-item fc-item-title">How to Make Vegetable Chips</h2>
+            <p class="content-item fc-item-body">About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in Brooklyn, and before a very thoughtfully prepared vegan…</p>
+            <p class="second-fc"><time datetime="2012-05-17">May 17, 2012</time>/ 
+              <span>read »</span>
+            </p>
+          </div>
+          <div class="featured-content-item" id="pinter">
+            <div class="content-iten fc-item-img-box"><img src="/images/asset 3.png" alt="#" class="fc-item-img"></div>
+            <h2 class="content-item fc-item-title">Join us on Pinterst!</h2>
+            <p class="content-item fc-item-body">If I could curate a cookbook for you, this would be it.</p>
+            <p class="second-fc"><time datetime="2012-05-16">May 16, 2012</time>/ 
+              <span>read »</span>
+          </div>
+          <div class="featured-content-item">
+            <div class="content-iten fc-item-img-box"><img src="/images/asset 4.jpeg" alt="#" class="fc-item-img"></div>
+            <h2 class="content-item fc-item-title">Recipes from a Sunday supper</h2>
+            <p class="content-item fc-item-body">I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…</p>
+            <p class="second-fc"><time datetime="2012-05-15">May 15, 2012</time>/ 
+              <span>read »</span>
+          </div>
+          <div><hr class="bottom-line"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-item footer-legal-links"><p>
+          <a href="#">Privacy Policy</a>  |  <a href="#">Terms of Use</a>  |  <span><a href="#">Contact</a></span>
+          <br>
+          © 2016 Your Brand, all rights reserved.
+        </p></div>
+        <div class="footer-item footer-social-links">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+      </footer>
+    </div>
+    <script>
+
+      function changeImage(fileName){
+
+      let img = document.querySelector("#image");
+      img.setAttribute("src" , fileName);
+      }
+
+    </script>
+  </body>
+</html>
